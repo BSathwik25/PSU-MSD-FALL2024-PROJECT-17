@@ -1,0 +1,1 @@
+C:/questasim64_2024.2/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.trace_parser -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt1 -id 1-4cd71798b2a4-672a89df-e1-6a28 +__design_bin_path+//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1

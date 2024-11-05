@@ -46,7 +46,7 @@ module trace_parser;
 
  
   string filename = "rwims.din"; // Default filename
-  parameter bit debug = 1;       // Set to 1 to enable debug messages, 0 to disable
+  parameter bit debug = 1;//$fopen(filename, "r");;       // Set to 1 to enable debug messages, 0 to disable
 
  
   int file;
@@ -64,6 +64,7 @@ module trace_parser;
     end
     else begin 
 	$display("No error in the file %s",filename);
+	
 
     $display("Parsing file: %s", filename);
 
@@ -71,7 +72,7 @@ module trace_parser;
     while (!$feof(file)) begin
       // Read a line with format: operation address
       status = $fscanf(file, "%d %s\n", operation, address);
-      
+      //c = status[0]
       if (status == 2) begin
         // Output parsed values if debugging is enabled
         if (debug) begin
@@ -86,7 +87,7 @@ module trace_parser;
     $fclose(file);
     $display("Finished parsing file %s", filename);
   end
-
+end
 endmodule
 
 
