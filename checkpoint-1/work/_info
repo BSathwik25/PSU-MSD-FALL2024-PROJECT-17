@@ -1,0 +1,56 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/HW2
+T_opt
+!s110 1730836791
+V>KIdCdTNi>9g2OBS_:HQ51
+04 12 4 work trace_parser fast 0
+=1-4cd71798b350-672a7936-1aa-2730
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vtrace_parser
+2//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/parse_trace_file.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1730836775
+!i10b 1
+!s100 K8g>CRk2l`Z8612Fc6PW`3
+IagbN0e1EzGc[?7dljgjSh3
+S1
+d//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1
+w1730836771
+8//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/parse_trace_file.sv
+F//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/parse_trace_file.sv
+!i122 3
+L0 45 47
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1730836775.000000
+!s107 //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/parse_trace_file.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|//thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/parse_trace_file.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

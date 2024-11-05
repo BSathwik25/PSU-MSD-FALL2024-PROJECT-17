@@ -1,0 +1,61 @@
+# Compile of parse_trace_file.sv failed with 1 errors.
+# Compile of parse_trace_file.sv failed with 1 errors.
+# Compile of parse_trace_file.sv failed with 4 errors.
+# Compile of parse_trace_file.sv failed with 3 errors.
+# Compile of parse_trace_file.sv failed with 3 errors.
+# Compile of parse_trace_file.sv failed with 3 errors.
+# Compile of parse_trace_file.sv failed with 4 errors.
+# Compile of parse_trace_file.sv failed with 4 errors.
+# Compile of parse_trace_file.sv failed with 4 errors.
+# Compile of parse_trace_file.sv failed with 4 errors.
+# Compile of parse_trace_file.sv was successful.
+vsim -gui work.trace_parser
+# vsim -gui work.trace_parser 
+# Start time: 11:49:10 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# Loading sv_std.std
+# Loading work.trace_parser(fast)
+# Compile of parse_trace_file.sv was successful.
+vsim -gui work.trace_parser
+# End time: 11:51:41 on Nov 05,2024, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 17
+# vsim -gui work.trace_parser 
+# Start time: 11:51:41 on Nov 05,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.trace_parser(fast)
+# Compile of parse_trace_file.sv was successful.
+vsim -gui work.trace_parser
+# End time: 11:57:18 on Nov 05,2024, Elapsed time: 0:05:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.trace_parser 
+# Start time: 11:57:18 on Nov 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# Loading sv_std.std
+# Loading work.trace_parser(fast)
+# Compile of parse_trace_file.sv was successful.
+vsim -gui work.trace_parser
+# End time: 11:59:50 on Nov 05,2024, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 2
+# vsim -gui work.trace_parser 
+# Start time: 11:59:50 on Nov 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# Loading sv_std.std
+# Loading work.trace_parser(fast)
+run -all
+# No error in the file rwims.din
+# Parsing file: rwims.din
+# Parsed - Operation: 0, Address: 0BADBAD0
+# Parsed - Operation: 0, Address: 1BADBAD2
+# Parsed - Operation: 1, Address: 2BADBAD0
+# Parsed - Operation: 6, Address: 0BADBAD0
+# Parsed - Operation: 6, Address: 1BADBAD1
+# Parsed - Operation: 6, Address: 2BADBAD0
+# Parsed - Operation: 9, Address: BAD0BAD0
+# Finished parsing file rwims.din
