@@ -1,14 +1,88 @@
-# Compile of parse_trace_file.sv was successful.
-vsim -gui work.trace_parser
-# vsim -gui work.trace_parser 
-# Start time: 12:49:05 on Nov 05,2024
-# ** Note: (vsim-3812) Design is being optimized...
+# Compile of checkpoint1_new.sv was successful.
+vsim -c -do "run -all" file_parser +INPUT=rwims.din
+# vsim -c -do "run -all" file_parser "+INPUT=rwims.din" 
+# Start time: 10:20:15 on Nov 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt7
+# Loading sv_std.std
+# Loading work.file_parser(fast)
+# run -all
+# Start
+# Parsing file: rwims.din
+# ** Note: $finish    : //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv(91)
+#    Time: 1 us  Iteration: 0  Instance: /file_parser
+# 1
+# Break at //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv line 91
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+vlog checkpoint1_new.sv
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:22:20 on Nov 18,2024
+# vlog -reportprogress 300 checkpoint1_new.sv 
+# -- Compiling module file_parser
+# 
+# Top level modules:
+# 	file_parser
+# End time: 10:22:20 on Nov 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -c -do "run -all" file_parser +INPUT=rwims.din
+# End time: 10:22:33 on Nov 18,2024, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 2
+# vsim -c -do "run -all" file_parser "+INPUT=rwims.din" 
+# Start time: 10:22:33 on Nov 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
 # Loading sv_std.std
-# Loading work.trace_parser(fast)
+# Loading work.file_parser(fast)
+# run -all
+# Start
+# Parsing file: rwims.din
+# ** Note: $finish    : checkpoint1_new.sv(91)
+#    Time: 1 us  Iteration: 0  Instance: /file_parser
+# 1
+# Break at checkpoint1_new.sv line 91
+quit -sim
+# End time: 10:23:13 on Nov 18,2024, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 1
+# Compile of checkpoint1_new.sv was successful.
+vsim -c -do "run -all" file_parser +INPUT=rwims.din
+# vsim -c -do "run -all" file_parser "+INPUT=rwims.din" 
+# Start time: 10:24:12 on Nov 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# Loading sv_std.std
+# Loading work.file_parser(fast)
+# run -all
+# Start
+# Parsing file: rwims.din
 run -all
-# No error in the file rwims.din
+vsim -c -do "run -all" file_parser +INPUT=rwims.din
+# End time: 10:24:49 on Nov 18,2024, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 2
+# vsim -c -do "run -all" file_parser "+INPUT=rwims.din" 
+# Start time: 10:24:49 on Nov 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt7
+# Loading sv_std.std
+# Loading work.file_parser(fast)
+# run -all
+# Start
+# Parsing file: rwims.din
+quit -sim
+# End time: 10:26:09 on Nov 18,2024, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 1
+# Compile of checkpoint1_new.sv was successful.
+vsim -c -do "run -all" file_parser +INPUT=rwims.din
+# vsim -c -do "run -all" file_parser "+INPUT=rwims.din" 
+# Start time: 10:27:35 on Nov 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# Loading sv_std.std
+# Loading work.file_parser(fast)
+# run -all
+# Start
 # Parsing file: rwims.din
 # Parsed - Operation: 0, Address: 0BADBAD0
 # Parsed - Operation: 0, Address: 1BADBAD2
@@ -18,81 +92,34 @@ run -all
 # Parsed - Operation: 6, Address: 2BADBAD0
 # Parsed - Operation: 9, Address: BAD0BAD0
 # Finished parsing file rwims.din
-# Compile of parse_trace_file.sv was successful.
-vsim -gui work.trace_parser
-# End time: 12:51:13 on Nov 05,2024, Elapsed time: 0:02:08
-# Errors: 0, Warnings: 3
-# vsim -gui work.trace_parser 
-# Start time: 12:51:13 on Nov 05,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: $finish    : //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv(88)
+#    Time: 1 us  Iteration: 0  Instance: /file_parser
+# 1
+# Break at //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv line 88
+vsim -c -do "run -all" file_parser +INPUT=rwimsss.din
+# End time: 10:28:16 on Nov 18,2024, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 2
+# vsim -c -do "run -all" file_parser "+INPUT=rwimsss.din" 
+# Start time: 10:28:16 on Nov 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt7
 # Loading sv_std.std
-# Loading work.trace_parser(fast)
-run -all
-# No error in the file rwims.din
-# Parsing file: rwims.din
+# Loading work.file_parser(fast)
+# run -all
+# Start
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "rwimsss.din" for reading.
+# No such file or directory. (errno = ENOENT)    : //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv(32)
+#    Time: 0 ns  Iteration: 0  Instance: /file_parser
+# Parsing file: default_file.din
+# Parsed - Operation: 0, Address: 00000000
 # Parsed - Operation: 0, Address: 0BADBAD0
 # Parsed - Operation: 0, Address: 1BADBAD2
 # Parsed - Operation: 1, Address: 2BADBAD0
 # Parsed - Operation: 6, Address: 0BADBAD0
 # Parsed - Operation: 6, Address: 1BADBAD1
 # Parsed - Operation: 6, Address: 2BADBAD0
-# Parsed - Operation: 9, Address: BAD0BAD0
-# Finished parsing file rwims.din
-# Compile of parse_trace_file.sv was successful.
-vsim -gui work.trace_parser
-# End time: 13:05:20 on Nov 05,2024, Elapsed time: 0:14:07
-# Errors: 0, Warnings: 2
-# vsim -gui work.trace_parser 
-# Start time: 13:05:20 on Nov 05,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# Loading sv_std.std
-# Loading work.trace_parser(fast)
-run -all
-# No error in the file rwims.din
-# Parsing file: rwims.din
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Error: Failed to parse line
-# Finished parsing file rwims.din
-# Compile of parse_trace_file.sv failed with 4 errors.
-# Compile of parse_trace_file.sv failed with 4 errors.
-# Compile of parse_trace_file.sv failed with 4 errors.
-# Compile of parse_trace_file.sv was successful.
-vsim -gui work.trace_parser
-# End time: 13:08:04 on Nov 05,2024, Elapsed time: 0:02:44
-# Errors: 0, Warnings: 5
-# vsim -gui work.trace_parser 
-# Start time: 13:08:04 on Nov 05,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# Loading sv_std.std
-# Loading work.trace_parser(fast)
-# Compile of parse_trace_file.sv was successful.
-vsim -gui work.trace_parser
-# End time: 13:10:54 on Nov 05,2024, Elapsed time: 0:02:50
-# Errors: 0, Warnings: 2
-# vsim -gui work.trace_parser 
-# Start time: 13:10:54 on Nov 05,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# Loading sv_std.std
-# Loading work.trace_parser(fast)
-run -all
-# No error in the file rwims.din
-# Parsing file: rwims.din
-# Parsed - Operation: 1, Address: 2BADBAD0
-# Parsed - Operation: 6, Address: 0BADBAD0
-# Parsed - Operation: 6, Address: 1BADBAD1
-# Parsed - Operation: 6, Address: 2BADBAD0
-# Parsed - Operation: 9, Address: BAD0BAD0
-# Finished parsing file rwims.din
+# Parsed - Operation: 9, Address:  BAD0BAD0
+# Finished parsing file default_file.din
+# ** Note: $finish    : //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv(88)
+#    Time: 1 us  Iteration: 0  Instance: /file_parser
+# 1
+# Break at //thoth.cecs.pdx.edu/Home02/sathwikb/Desktop/checkpoint-1/checkpoint1_new.sv line 88
