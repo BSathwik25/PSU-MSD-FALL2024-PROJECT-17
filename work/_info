@@ -1,0 +1,37 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/u/thanmain/MSD_REF
+vCache_create
+2cache_create.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1732012413
+!i10b 1
+!s100 C[nadKMB;199aj[^OYRCL2
+IM<XJDSQIA>Wl6;6X5KdjU3
+S1
+R0
+w1732012395
+8cache_create.sv
+Fcache_create.sv
+!i122 0
+L0 1 21
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1732012413.000000
+!s107 cache_create.sv|
+!s90 -reportprogress|300|cache_create.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
+n@cache_create
