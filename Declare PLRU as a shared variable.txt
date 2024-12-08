@@ -1,0 +1,31 @@
+// Declare PLRU as a shared variable
+logic [2**$clog2(CACHE_WAYS)-2:0] PLRU; // PLRU tree size = 2^(CACHE_WAYS-1) - 1
+
+// Task to update the PLRU tree based on the accessed 'way'
+task automatic updatelru(input bit [$clog2(CACHE_WAYS)-1:0] way);
+  int b = 0; // Index in the PLRU tree
+  int i;
+  begin
+    // Update the PLRU tree from MSB to LSB
+    for (i = $clog2(CACHE_WAYS)-1; i >= 0; i--) begin
+      PLRU[b] = way[i]; // Update the PLRU bit
+      b = 2 * b + 1 + way[i]; // Navigate to the next node
+    end
+  end
+endtask
+
+// Function to get the least recently used (LRU) 'way'
+function automatic int get_way();
+  int b = 0; // Index in the PLRU tree
+  int way = 0; // Output way
+  int i;
+  begin
+    // Traverse the PLRU tree to determine the LRU way
+    for (i = 0; i < $clog2(CACHE_WAYS); i++) begin
+      way[i] = ~PLRU[b]; // Take the opposite of the current PLRU bit
+      b = 2 * b + 1 + (~PLRU[b]); // Navigate to the next node
+    end
+    return way;
+  end
+endfunction
+
