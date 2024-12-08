@@ -1,0 +1,36 @@
+//Snoop Results of other caches
+`define NOHIT 2'b11
+`define HIT 2'b00
+`define HITM 2'b01
+
+//"---00= HIT,   ---01 = HitM        ---10   or  ---11 = NoHit"
+
+`define READ 1
+`define WRITE 2
+`define INVALIDATE 3
+`define RWIM 4 
+
+ //L2 to L1 Messages
+`define GETLINE 1 
+`define SENDLINE 2 
+`define INVALIDATELINE 3 
+`define EVICTLINE 4
+
+//modes
+`define NormalMode 1
+`define SilentMode 0
+
+
+module Cache_create;
+  // Parameters for cache properties
+parameter CACHE_SIZE = 1<<23;
+parameter CACHE_WAYS = 16;
+parameter BLOCK_SIZE = 64;
+  
+  
+ //cache design parameters
+localparam int ADDR_BITS = 32;
+localparam int OFFSET_BITS =$clog2(block_size);
+localparam int INDEX_BITS = $clog2(sets);
+localparam int NSETS = CACHE_SIZE/(BLOCK_SIZE * CACHE_WAYS);
+localparam int TAG_BITS = 32 - (INDEX_BITS+OFFSET_BITS);
