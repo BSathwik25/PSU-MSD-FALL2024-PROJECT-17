@@ -1,0 +1,102 @@
+//DISPLAY MESI STATE IN NORMAL MODE*/
+function string MESI_to_string(int MESI);
+    case (MESI)
+        I: return "I";  
+        E: return "E"; 
+        M: return "M";  
+        S: return "S"; 
+        default: return "Unknown";
+endcase
+endfunction
+  
+  
+  
+    
+ /*BUS OPERATION TYPES *********************************************/
+  
+  
+      function string BusOP_to_string(int BusOperation);
+    case (BusOperation)
+        `READ      : return "READ";  
+        `WRITE     : return "WRITE"; 
+        `RWIM      : return "RWIM";  
+        `INVALIDATE: return "INVALIDATE"; 
+        default    : return "Unknown";
+    endcase
+   endfunction
+
+  
+  
+  /*SNOOP RESULT TYPES *********************************************/
+  
+  
+      function string Snoop_to_string(int SnoopResult);
+    case (SnoopResult)
+        `HIT       : return "HIT";  
+        `NOHIT     : return "NOHIT"; 
+        `HITM      : return "HITM";   
+        default    : return "Unknown";
+    endcase
+   endfunction
+
+  
+  
+   /*L2 TO L1 MESSAGE TYPES **********************************/
+  
+  function string CacheMessage_to_string(int Message);
+    case (Message)
+        `GETLINE            : return "GETLINE";  
+        `INVALIDATELINE     : return "INVALIDATELINE"; 
+        `SENDLINE           : return "SENDLINE"; 
+        `EVICTLINE          : return "EVICTLINE";
+         default            : return "Unknown";
+    endcase
+   endfunction
+ 
+  
+  
+  
+  /************************************ BUS OPERATIONS *****************************************/
+
+  function automatic void BusOperation(int BusOp, bit[ADDR_BITS-1:0] Address, int SnoopResult);
+   if(mode==`NormalMode)
+    $display("BusOp: %s, Address: %h, Snoop Result: %s\n",BusOP_to_string(BusOp),Address,Snoop_to_string(SnoopResult));
+  endfunction
+
+  
+  
+    
+  /************************************ GET SNOOP RESULTS ***************************************/
+//`define NOHIT 2'b11
+//`define HIT 2'b00
+//`define HITM 2'b01
+
+  function automatic int GetSnoopResult(bit[ADDR_BITS-1:0] Address);
+    if(Address[1:0]==2'b00)
+        return `HIT;
+    else if(Address[1:0]==2'b01)
+        return `HITM;
+    else
+        return `NOHIT;
+  endfunction
+
+  
+    /************************************ PUT SNOOP RESULTS **************************************/
+
+  function automatic void PutSnoopResult(bit [ADDR_BITS-1:0] Address, int SnoopResult);
+    if(mode==`NormalMode)
+      $display("SnoopResult: Address %h, SnoopResult: %0d\n", Address, Snoop_to_string(SnoopResult));
+  endfunction
+  
+
+  
+  
+  
+  
+    /************************************ Communication TO UPPER LEVEL CACHE **************************/
+
+
+  function automatic void MessageToCache(int Message, bit [ADDR_BITS-1:0] Address);
+   if(mode==`NormalMode)
+     $display("Message to UPPER Level Cache: %s", CacheMessage_to_string(Message));
+  endfunction
