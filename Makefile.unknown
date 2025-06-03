@@ -1,0 +1,29 @@
+# Makefile for Questa Sim simulator
+
+# Compiler and simulator settings
+VLOG = vlog
+VSIM = vsim
+VLOG_FLAGS = -sv +define+DEBUG_ON
+VSIM_FLAGS = -c -voptargs=+acc
+# mode=1
+# Default input and output file names
+#input_file = t0.din
+#OUTPUT_FILE = dram1.txt
+
+# Source files
+SRC_FILE = file3.sv
+
+# Makefile targets
+all: compile simulate
+
+compile:
+	$(VLOG) $(VLOG_FLAGS) $(SRC_FILE)
+
+simulate:
+	$(VSIM) $(VSIM_FLAGS) +MODE=$(mode) +INPUT=$(input_file) Cache_create -do "run -all"
+
+#clean:
+	#rm -rf work transcript *.log vsim.wlf $(OUTPUT_FILE)
+
+#.PHONY: all compile simulate clean
+
