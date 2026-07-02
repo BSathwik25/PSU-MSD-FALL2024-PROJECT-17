@@ -1,1 +1,1 @@
-# PSU-MSD-FALL2024-PROJECT
+# Last-Level Cache (LLC) Simulator with MESI & Pseudo-LRU
